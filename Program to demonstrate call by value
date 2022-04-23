@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace umesh22
+{
+    public class Program
+    {
+        void get(int x)
+    	{
+    	x=10;
+    	Console.WriteLine(x);
+    	}
+        public static void Main()
+        {
+	        int x=20;
+			Program p=new Program();
+			Console.WriteLine("Before function call:-"+x);
+			p.get(x);
+			Console.WriteLine("After function call:-"+x);
+        }
+    } 
+}  
+
