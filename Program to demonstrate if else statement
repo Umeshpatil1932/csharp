@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace umesh16
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            int age;
+            Console.WriteLine("Entet age of voter ");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            if (age >= 18)
+            {
+                Console.WriteLine("Eligible for vote");
+            }
+            else
+            {
+                Console.WriteLine("Not eligible for vote");
+            }
+        }
+    }
+}
