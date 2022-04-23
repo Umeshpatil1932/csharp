@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace umesh19
+{
+    class Program
+    {
+       public virtual void showinfo()
+    	{
+    		Console.WriteLine("Base class method");
+    	}
+    }
+    class umesh:Program
+    {
+    	public override void showinfo()
+    	{
+    		Console.WriteLine("Derived class method");
+    	}
+    
+        public static void Main()
+        {
+			umesh u1=new umesh();
+			u1.showinfo();
+			u1.showinfo();
+        }
+    }
+}
